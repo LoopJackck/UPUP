@@ -325,7 +325,7 @@ MonoBehaviour:
     type: 3}
   BulletCount: 10
   firePoint: {fileID: 6248165682025887612}
-  bulletSpeed: 20
+  bulletSpeed: 10
   ShootDelayTime: 3
 --- !u!1 &7215506192991613484
 GameObject:
