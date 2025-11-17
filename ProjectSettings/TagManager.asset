@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Enemy
   layers:
@@ -51,3 +51,8 @@ TagManager:
   - name: Front
     uniqueID: 3405993979
     locked: 0
+  - name: bullet
+    uniqueID: 68391521
+    locked: 0
+  m_RenderingLayers:
+  - Default
