@@ -9,8 +9,8 @@ public class Moving_Thorn : MonoBehaviour
 
     public float scaleSpeed = 50f;
 
-    private Vector2 Max_Scale = new Vector2(1.154001f, 4.54783f);
-    private Vector2 Min_Scale = new Vector2(1.154001f, -0.2647399f);
+    private Vector2 Max_Scale = new Vector2(1.154001f, 1.423953f);
+    private Vector2 Min_Scale = new Vector2(1.154001f, 0.3011661f);
 
     private bool IsActive = false;
     public BoxCollider2D BoxColl;
