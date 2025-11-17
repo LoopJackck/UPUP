@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8597985368069917215}
   - component: {fileID: 6500828299322997272}
   - component: {fileID: 5778445783333077368}
-  m_Layer: 19
+  m_Layer: 9
   m_Name: "\uCD1D\uC54C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,61 +147,13 @@ MonoBehaviour:
   ignoreInvincibility: 0
   hittableLayers:
     serializedVersion: 2
-    m_Bits: 2147484160
+    m_Bits: 8192
   OnDamageableHit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9015942258087596577}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnHitDamageable
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BulletImpact
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9015942258087596577}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ReturnToPool
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnNonDamageableHit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9015942258087596577}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnHitNonDamageable
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9015942258087596577}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ReturnToPool
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &9015942258087596577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2670404758686506210}
   - component: {fileID: 8232922216218754912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

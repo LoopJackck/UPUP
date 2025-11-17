@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  offset: {x: -0.003965497, y: 0.003606543}
-  size: {x: 1.2796781, y: 0.6838814}
+  offset: {x: -0.003965497, y: 0.26024777}
+  size: {x: 1.2796781, y: 0.79450274}
   offsetBasedOnSpriteFacing: 1
   spriteRenderer: {fileID: 3362883981326716781}
   canHitTriggers: 0
