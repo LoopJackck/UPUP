@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 2938648094679372969}
   - component: {fileID: 2992305162815878823}
   m_Layer: 31
-  m_Name: "\uAC00\uC2DC\uC7A5\uC560\uBB3C"
+  m_Name: "\uAC00\uC2DC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +879,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0009866953, y: -0.15791273}
+  m_Offset: {x: -0.0009866953, y: 0.02836135}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -889,7 +889,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.229687, y: 0.3269742}
+  m_Size: {x: 1.229687, y: 0.69952244}
   m_EdgeRadius: 0
 --- !u!4 &6453402603362102252
 Transform:
@@ -900,8 +900,8 @@ Transform:
   m_GameObject: {fileID: 6457448258958054350}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1540006, y: 1.201445, z: 1}
+  m_LocalPosition: {x: 0.44, y: 0.0897, z: 0}
+  m_LocalScale: {x: 1.154001, y: 1.201445, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -918,8 +918,10 @@ GameObject:
   - component: {fileID: 6588726877699975612}
   - component: {fileID: 6433263688064049150}
   - component: {fileID: 6343718454900637168}
+  - component: {fileID: 6588726877699975614}
+  - component: {fileID: 6588726877699975613}
   m_Layer: 31
-  m_Name: "\uAC00\uC2DC"
+  m_Name: "\uAC00\uC2DC\uC7A5\uC560\uBB3C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -983,6 +985,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6588726877699975613
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457448258958054350}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aecf2471404ba3d4ba8bbf81070cd8a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6588726877699975614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457448258958054350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d351e43a684d8458c4a164d3056202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Moving_Thorn
+  deactivate_Time: 0.5
+  active_Time: 2
 --- !u!212 &7619058313708540911
 SpriteRenderer:
   m_ObjectHideFlags: 0
