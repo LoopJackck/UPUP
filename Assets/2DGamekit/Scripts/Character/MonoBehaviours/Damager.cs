@@ -65,6 +65,13 @@ namespace Gamekit2D
             m_CanDamage = false;
         }
 
+        public void RefreshContactFilter()
+        {
+            m_AttackContactFilter.layerMask = hittableLayers;
+            m_AttackContactFilter.useLayerMask = true;
+            m_AttackContactFilter.useTriggers = canHitTriggers;
+        }
+
         void FixedUpdate()
         {
             if (!m_CanDamage)
