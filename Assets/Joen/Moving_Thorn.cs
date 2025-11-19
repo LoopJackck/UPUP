@@ -1,4 +1,5 @@
 using System.Collections;
+using Gamekit2D;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class Moving_Thorn : MonoBehaviour
 
     private bool IsActive = false;
     public BoxCollider2D BoxColl;
+
+    public Damager D;
 
     void Start()
     {
@@ -47,12 +50,16 @@ public class Moving_Thorn : MonoBehaviour
         while (true)
         {
             IsActive = false;
-            BoxColl.isTrigger = true;
+            //BoxColl.isTrigger = true;
+            D.gameObject.SetActive(true);
+            //D.hittableLayers = LayerMask.NameToLayer("Nothing");
 
             yield return new WaitForSeconds(deactivate_Time);
 
             IsActive = true;
-            BoxColl.isTrigger = false;
+            //  BoxColl.isTrigger = false;
+            D.gameObject.SetActive(false);
+            //D.hittableLayers = LayerMask.NameToLayer("Player");
 
             yield return new WaitForSeconds(active_Time);
 

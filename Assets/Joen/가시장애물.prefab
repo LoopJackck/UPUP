@@ -181,7 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d351e43a684d8458c4a164d3056202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Moving_Thorn
-  deactivate_Time: 0.5
+  deactivate_Time: 1.5
   active_Time: 2
   scaleSpeed: 5
   BoxColl: {fileID: 8295988997452160694}
+  D: {fileID: 8429795231350418525}
