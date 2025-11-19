@@ -51,14 +51,14 @@ public class Moving_Thorn : MonoBehaviour
         {
             IsActive = false;
             //BoxColl.isTrigger = true;
-            D.gameObject.SetActive(true);
+            D.enabled = false;
             //D.hittableLayers = LayerMask.NameToLayer("Nothing");
 
             yield return new WaitForSeconds(deactivate_Time);
 
             IsActive = true;
             //  BoxColl.isTrigger = false;
-            D.gameObject.SetActive(false);
+            D.enabled = true;
             //D.hittableLayers = LayerMask.NameToLayer("Player");
 
             yield return new WaitForSeconds(active_Time);
