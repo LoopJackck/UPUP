@@ -1,6 +1,6 @@
 using System.Collections;
 using Gamekit2D;
-using UnityEditor.Tilemaps;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Moving_Thorn : MonoBehaviour
