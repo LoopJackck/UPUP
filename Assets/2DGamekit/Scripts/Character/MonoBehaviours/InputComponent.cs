@@ -11,6 +11,7 @@ namespace Gamekit2D
         {
             MouseAndKeyboard,
             Controller,
+
         }
 
 
@@ -146,6 +147,7 @@ namespace Gamekit2D
                         m_AfterFixedUpdateUp |= Up;
                     }
                 }
+              
             }
 
             public void Enable()
@@ -190,6 +192,8 @@ namespace Gamekit2D
         {
             public KeyCode positive;
             public KeyCode negative;
+            private KeyCode altpositive;
+            private KeyCode altnegative;
             public XboxControllerAxes controllerAxis;
             public float Value { get; protected set; }
             public bool ReceivingInput { get; protected set; }
@@ -212,15 +216,25 @@ namespace Gamekit2D
                 {(int)XboxControllerAxes.RightTrigger, "Right Trigger"},
             };
 
-            public InputAxis(KeyCode positive, KeyCode negative, XboxControllerAxes controllerAxis)
+            public InputAxis(KeyCode positive, KeyCode negative, KeyCode alt_positive, KeyCode alt_negative, XboxControllerAxes controllerAxis)
             {
                 this.positive = positive;
                 this.negative = negative;
+                this.altpositive = alt_positive;
+                this.altnegative = alt_negative;
+                
+
                 this.controllerAxis = controllerAxis;
             }
 
             public void Get(InputType inputType)
             {
+                Debug.Log($"WASD_P : {positive}");
+                Debug.Log($"WASD_n : {negative}");
+                Debug.Log($"A_P : {altpositive}");
+                Debug.Log($"A_n : {altnegative}");
+
+
                 if (!m_Enabled)
                 {
                     Value = 0f;
@@ -241,8 +255,16 @@ namespace Gamekit2D
                 }
                 else if (inputType == InputType.MouseAndKeyboard)
                 {
-                    positiveHeld = Input.GetKey(positive);
-                    negativeHeld = Input.GetKey(negative);
+                    //positiveHeld = Input.GetKey(positive);
+                    //negativeHeld = Input.GetKey(negative);
+
+                    //if(Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey(KeyCode.RightArrow))
+                    //{
+                    //    positiveHeld = Input.GetKey(altpositive);
+                    //    negativeHeld = Input.GetKey(altnegative);
+                    //}
+                    positiveHeld = Input.GetKey(positive) || Input.GetKey(altpositive);
+                    negativeHeld = Input.GetKey(negative) || Input.GetKey(altnegative);
                 }
 
                 if (positiveHeld == negativeHeld)
