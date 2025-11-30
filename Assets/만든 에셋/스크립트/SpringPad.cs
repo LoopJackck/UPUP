@@ -34,15 +34,20 @@ public class SpringPad : MonoBehaviour
                 // 플레이어가 아래로 떨어지고 있을 때만 튀어오르게 (또는 정지 상태)
                 if (currentVelocity.y <= 0.1f)
                 {
-                    // PlayerCharacter의 SetVerticalMovement를 사용해서 속도 설정
-                    player.SetVerticalMovement(bounceVelocity);
+                    // 스프링의 회전 각도에 따른 방향으로 튀어오르기
+                    // transform.up은 스프링이 가리키는 방향 (회전에 따라 변함)
+                    Vector2 bounceDirection = transform.up.normalized;
+                    Vector2 bounceVector = bounceDirection * bounceVelocity;
+
+                    // PlayerCharacter의 MoveVector를 설정 (이렇게 해야 PlayerCharacter의 움직임 시스템과 충돌하지 않음)
+                    player.SetMoveVector(bounceVector);
 
                     // 한 번 튀어올랐다고 표시
                     hasBouncedPlayer = true;
 
                     if (showDebugMessages)
                     {
-                        Debug.Log($"[SpringPad] 플레이어 튀어오름! 속도: {bounceVelocity}");
+                        Debug.Log($"[SpringPad] 플레이어 튀어오름! 방향: {bounceDirection}, 속도: {bounceVelocity}");
                     }
                 }
             }
@@ -68,10 +73,13 @@ public class SpringPad : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(transform.position, transform.localScale);
 
-        // 위쪽 화살표 그리기
+        // 스프링이 가리키는 방향으로 화살표 그리기
         Gizmos.color = Color.green;
         Vector3 arrowStart = transform.position;
-        Vector3 arrowEnd = transform.position + Vector3.up * 2f;
+        Vector3 arrowEnd = transform.position + transform.up * 2f;
         Gizmos.DrawLine(arrowStart, arrowEnd);
+
+        // 화살표 끝에 작은 원 그리기
+        Gizmos.DrawWireSphere(arrowEnd, 0.2f);
     }
 }
