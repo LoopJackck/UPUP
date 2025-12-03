@@ -295,7 +295,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144903174384581492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 82e110c1b91165c4a901c5d6575a05bf, type: 2}
   m_CullingMode: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Shooter
   bulletPrefab: {fileID: 451947068218174617, guid: edb574972adc00345be960e7bef00cfe,
     type: 3}
-  BulletCount: 10
+  BulletCount: 50
   firePoint: {fileID: 6248165682025887612}
   bulletSpeed: 10
   ShootDelayTime: 3
