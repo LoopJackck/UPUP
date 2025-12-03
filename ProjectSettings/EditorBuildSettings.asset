@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Start.unity
     guid: 57df1e417250bc247976c2c0dc088efe
+  - enabled: 1
+    path: Assets/MainScene.unity
+    guid: 40ebffcc80c204343a840c4d77b3ef63
+  - enabled: 1
+    path: Assets/Ending.unity
+    guid: 8e05bb4edcd8c014aa5b46a2c2b5d371
   - enabled: 0
     path: Assets/2DGamekit/Scenes/Zone1.unity
     guid: a94cb8f134bf81349ad016c79b629e3d
@@ -32,8 +38,5 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NewScene.unity
     guid: a341347ecfade124f817cac8ea56a209
-  - enabled: 1
-    path: Assets/MainScene.unity
-    guid: 40ebffcc80c204343a840c4d77b3ef63
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
