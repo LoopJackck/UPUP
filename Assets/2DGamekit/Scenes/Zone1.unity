@@ -900,6 +900,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4793926061999545808, guid: e51f24b38e957fc4ba33c88add2f9509,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: c812bc8c71a77a949ad4ddc0cf831fc1,
+        type: 3}
     - target: {fileID: 5767488526688574559, guid: e51f24b38e957fc4ba33c88add2f9509,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -952,9 +958,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6216955933078955464, guid: e51f24b38e957fc4ba33c88add2f9509,
         type: 3}
+      propertyPath: pressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c812bc8c71a77a949ad4ddc0cf831fc1,
+        type: 3}
+    - target: {fileID: 6216955933078955464, guid: e51f24b38e957fc4ba33c88add2f9509,
+        type: 3}
       propertyPath: bounceVelocity
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 6216955933078955464, guid: e51f24b38e957fc4ba33c88add2f9509,
+        type: 3}
+      propertyPath: unpressedSprite
+      value: 
+      objectReference: {fileID: 21300002, guid: c812bc8c71a77a949ad4ddc0cf831fc1,
+        type: 3}
     - target: {fileID: 8814443688603523327, guid: e51f24b38e957fc4ba33c88add2f9509,
         type: 3}
       propertyPath: m_Name
