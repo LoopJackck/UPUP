@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1506f7b67235554cb42519c257da979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gamekit2D.Damager
-  damage: 1
+  damage: 0
   offset: {x: 0.028562427, y: 1.5790077}
   size: {x: 1.5631983, y: 0.4448588}
   offsetBasedOnSpriteFacing: 1
