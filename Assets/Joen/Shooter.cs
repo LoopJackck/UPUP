@@ -18,14 +18,7 @@ public class Shooter : MonoBehaviour
 
     private void Awake()
     {
-        if (poolinstance == null)
-        {
-            poolinstance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+      
 
         for (int i = 0; i < BulletCount; i++)
         {
