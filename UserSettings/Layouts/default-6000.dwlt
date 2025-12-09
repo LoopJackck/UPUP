@@ -139,10 +139,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 86
+    x: 0
+    y: 36
     width: 1692
-    height: 774.6667
+    height: 798.6667
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
